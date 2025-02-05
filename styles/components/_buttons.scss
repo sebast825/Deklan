@@ -1,0 +1,36 @@
+// Components
+.button {
+   padding: 1rem 2rem;
+   border-radius: 0.5rem;
+   font-weight: 600;
+   text-decoration: none;
+   transition: all 0.3s ease;
+   text-align: center;
+   &--primary {
+     background-color: $color-light-blue;
+     color: $color-blue;
+
+    
+     &:hover {
+       background-color: darken($color-light-blue, 10%);
+     }
+   }
+   &--secondary{
+    background-color: $color-bg-dark;
+     color: $color-white;
+
+    
+     &:hover {
+       background-color: lighten($color-bg-dark, 10%);
+     }
+   }
+   &--submit{
+    background-color: $color-blue;
+    color:  $color-light-blue;
+    
+    
+    &:hover {
+      background-color: darken($color-blue, 10%);
+    }
+   }
+ }

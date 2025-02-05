@@ -1,0 +1,17 @@
+ 
+ // Process Steps (fondo blanco, cards celestes)
+.process {
+  padding: 4rem 0;
+  background-color: $color-white;
+
+  &__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .section__title {
+    color: $color-text;
+  }
+}

@@ -1,0 +1,70 @@
+
+// Header & Hero
+.header {
+   background: linear-gradient(180deg, darken($color-blue, 5%), $color-blue);   
+   
+   min-height: 75vh; // Asegura que ocupe toda la altura inicial
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+.nav {
+  height: $nav-height;
+  backdrop-filter: blur(5px);
+  position: fixed; // Fijamos la navegación
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: rgba($color-bg-dark, 0.9);
+  background: linear-gradient(180deg, rgba($color-bg-dark,1), rgba($color-bg-dark,.85));   
+
+  
+  &__content {
+    height: $nav-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-img {
+    width: 70px; // Logo más pequeño pero más proporcionado
+ 
+    transition: transform $transition-speed ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__link {
+    font-size: 1.1rem;
+    color: $color-title;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all $transition-speed ease;
+
+    &:hover {
+      background-color: rgba($color-light-blue, 0.1);
+      color: $color-title;
+    }
+  }
+}
+
+
+// Animaciones
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

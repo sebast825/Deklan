@@ -1,0 +1,29 @@
+// Reset
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+      &::-webkit-scrollbar{
+         width: 10px;
+         background-color: $color-bg-dark;
+       
+         @include respond(ipad) {
+            width: 4px;
+   
+         }
+      }
+      &::-webkit-scrollbar-thumb{
+   
+            background-color: $color-light-blue;
+            border-radius: 10px;
+            
+      
+      }
+   }
+
+body {
+   line-height: 1.5;
+
+ 
+}

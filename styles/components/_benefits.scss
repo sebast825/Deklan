@@ -1,0 +1,46 @@
+
+
+// Benefits (fondo azul)
+.benefits {
+   padding: 4rem 0;
+   background-color: $color-blue;
+ 
+   &__grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 2rem;
+   }
+ 
+   .section__title {
+     color: $color-white;
+   }
+ }
+
+ .benefit-card {
+   padding: 2rem;
+   border-radius: 1rem;
+   background-color: rgba($color-white, 0.9);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
+   &__title {
+     color: $color-text;
+   }
+ 
+   &__list {
+     list-style-position: inside;
+ 
+     @include respond(phone) {
+       list-style-position:outside;
+ 
+     }
+     margin-top: 1rem;
+     color: $color-text;
+ 
+     li {
+       margin-bottom: 0.5rem;
+     &::marker{
+       color: $color-blue;
+     }
+     }
+   }
+ }
