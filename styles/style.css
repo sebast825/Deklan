@@ -349,6 +349,19 @@ button[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  .nav__container--logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100%; }
+    .nav__container--logo h2 {
+      font-size: 3rem;
+      margin: 0;
+      color: #f0fff4; }
+      @media (max-width: 37.5em) {
+        .nav__container--logo h2 {
+          font-size: 2rem;
+          margin: -.7rem; } }
   .nav__logo-img {
     width: 70px;
     transition: transform 0.3s ease; }

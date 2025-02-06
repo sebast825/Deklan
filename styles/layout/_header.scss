@@ -28,7 +28,23 @@
     align-items: center;
     justify-content: space-between;
   }
+&__container--logo{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
 
+  h2{
+    font-size: 3rem;
+    margin: 0;
+    color: $color-title;
+    @include respond (phone){
+      font-size: 2rem;
+      margin: -.7rem;
+
+    }
+  }
+}
   &__logo-img {
     width: 70px; // Logo más pequeño pero más proporcionado
  
