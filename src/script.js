@@ -1,5 +1,5 @@
 
-const contact = document.querySelector(".nav__link--contacto");
+const contact = document.querySelectorAll(".openPopUp");
 const popup = document.querySelector("#email-popup");
 const closeModal = document.querySelector(".close-modal");
 
@@ -37,5 +37,8 @@ const sendEmail = () => {
 };
 
 sendEmail();
-contact.addEventListener("click", toggleModal);
+contact.forEach(element => {
+  element.addEventListener("click", toggleModal);
+
+});
 closeModal.addEventListener("click", toggleModal);
