@@ -1,60 +1,58 @@
 // Responsive Design
 @media (max-width: 768px) {
-   .hero__title {
-     font-size: 2rem;
-   }
- 
-   .process__steps,
-   .benefits__grid,
-   .features__grid,
-   .results__stats {
-     grid-template-columns: 1fr;
-   }
- }
- 
- .container {
-  
-   @include container;
-   // Typography
-   h1,
-   h2,
-   h3 {
-     margin-bottom: 1rem;
-     //@include fontUno;
- 
-   }
+  .hero__title{
+    font-size: 2rem;
+  }
 
-   &__btn{
+  .process__steps,
+  .benefits__grid,
+  .features__grid,
+  .results__stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container {
+  @include container;
+  // Typography
+  h1,
+  h2 {
+    margin-bottom: 1rem;
+    //@include fontUno;
+  }
+  h3 {
+    margin-bottom: 0.2rem;
+  }
+
+  &__btn {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-   }
- }
-
-  // Section Titles
-  .section__title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: $color-title;
-
   }
-   // Section Titles
- .section__subtitle {
+}
+
+// Section Titles
+.section__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: $color-title;
+}
+// Section Titles
+.section__subtitle {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  
 }
 
-.color--dark *{
+.color--dark * {
   color: $color-text;
 }
 
 .color--highlight {
   color: $color-blue;
 }
-.color--light{
+.color--light {
   color: $color-light-blue;
 }

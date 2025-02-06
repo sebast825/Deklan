@@ -112,9 +112,10 @@ button, a {
   margin: 0 auto;
   padding: 0 1rem; }
   .container h1,
-  .container h2,
-  .container h3 {
+  .container h2 {
     margin-bottom: 1rem; }
+  .container h3 {
+    margin-bottom: 0.2rem; }
   .container__btn {
     margin-top: 2rem;
     display: flex;
@@ -147,8 +148,7 @@ button, a {
   .process__steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem; }
+    gap: 2rem; }
   .process .section__title {
     color: #000; }
 
@@ -207,7 +207,7 @@ button, a {
     .hero {
       padding: 4rem 1rem; } }
   .hero__content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
@@ -218,7 +218,7 @@ button, a {
     margin-bottom: 1rem;
     color: #f0fff4;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1;
     letter-spacing: -0.02em; }
     @media (max-width: 768px) {
       .hero__title {
@@ -232,8 +232,9 @@ button, a {
       .hero__subtitle {
         font-size: 1.25rem; } }
   .hero__text {
-    font-size: 1rem;
-    color: #f0fff4; }
+    font-size: 1.1rem;
+    color: #f0fff4;
+    font-style: italic; }
   .hero__opening {
     padding: 6rem 0;
     margin-top: 80px; }
