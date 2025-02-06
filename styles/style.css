@@ -131,7 +131,7 @@ button, a {
 .section__subtitle {
   text-align: center;
   font-size: 1.2rem;
-  margin-bottom: 2rem; }
+  margin-top: -1rem; }
 
 .color--dark * {
   color: #000; }
@@ -141,6 +141,9 @@ button, a {
 
 .color--light {
   color: #e6f3ff; }
+
+.color--title {
+  color: #f0fff4; }
 
 .process {
   padding: 4rem 0;
