@@ -226,11 +226,14 @@ button, a {
   .hero__subtitle {
     font-size: 1.5rem;
     margin-bottom: 2.5rem;
-    color: rgba(240, 255, 244, 0.9);
+    color: #f0fff4;
     font-weight: 400; }
     @media (max-width: 768px) {
       .hero__subtitle {
         font-size: 1.25rem; } }
+  .hero__text {
+    font-size: 1rem;
+    color: #f0fff4; }
   .hero__opening {
     padding: 6rem 0;
     margin-top: 80px; }

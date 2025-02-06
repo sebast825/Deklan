@@ -27,11 +27,17 @@
   &__subtitle {
     font-size: 1.5rem; // Subtítulo más grande
     margin-bottom: 2.5rem;
-    color: rgba($color-title, 0.9);
+    color: rgba($color-title,1);
     font-weight: 400;
     @media (max-width: 768px) {
       font-size: 1.25rem;
     }
+   
+  }
+  &__text{
+    font-size: 1rem;
+    color: rgba($color-title,1);
+
   }
   &__opening {
     padding: $hero-padding  0;
