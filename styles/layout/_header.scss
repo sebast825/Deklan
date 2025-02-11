@@ -44,7 +44,7 @@
     margin: 0;
     color: $color-title;
     @include respond (phone){
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin: -.7rem;
 
     }
@@ -53,9 +53,7 @@
   &__logo-img {
     width: 50px; 
     transition: transform $transition-speed ease;
-    @include respond(phone){
-      width: 40px; 
-    }
+
     &:hover {
       transform: scale(1.05);
     }
