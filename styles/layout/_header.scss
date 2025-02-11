@@ -33,7 +33,11 @@
   justify-items: center;
   align-items: center;
   height: 100%;
+  gap: .5rem;
+  @include respond (phone){
+    gap: 1rem;
 
+  }
   h2{
     font-size: 3rem;
     margin: 0;
@@ -46,10 +50,11 @@
   }
 }
   &__logo-img {
-    width: 70px; // Logo más pequeño pero más proporcionado
- 
+    width: 50px; 
     transition: transform $transition-speed ease;
-    
+    @include respond(phone){
+      width: 40px; 
+    }
     &:hover {
       transform: scale(1.05);
     }
