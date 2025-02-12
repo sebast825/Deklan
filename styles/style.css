@@ -111,8 +111,7 @@ button, a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem; }
-  .container h1,
-  .container h2 {
+  .container h1 {
     margin-bottom: 1rem; }
   .container h3 {
     margin-bottom: 0.2rem; }
@@ -125,6 +124,7 @@ button, a {
 .section__title {
   text-align: center;
   font-size: 2rem;
+  line-height: 2.2rem;
   margin-bottom: 2rem;
   color: #f0fff4; }
 
